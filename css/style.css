@@ -96,6 +96,7 @@ a {
   bottom: 0;
   top: 0;
 }
+
 .photo-item img {
   filter: gray;
   -webkit-transition: all .1s ease-in-out; }
