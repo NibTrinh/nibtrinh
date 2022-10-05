@@ -126,7 +126,7 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row" id="gallery">
         <div class="col-md-6 col-lg-6 text-center mb-5">
           <img src="images/logo-nutrilite.jpg" alt="Image" class="img-fluid w-50 mb-4">
           <!-- <h2 class="text-black font-weight-light mb-4">Jean Smith</h2> -->
@@ -288,6 +288,7 @@
   <script>
     $(document).ready(function(){
       $('#lightgallery').lightGallery();
+      $('#gallery').bind('contextmenu',function() { return false; });
     });
   </script>
 
