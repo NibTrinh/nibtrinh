@@ -207,6 +207,12 @@ a {
     height: 1px;
     background: #000; }
 
+@media (max-width: 768px){
+  .info-about {
+    margin-top: 25px;
+  }
+}
+
 .border-top {
   border-top: 1px solid #edf0f5 !important; }
 

@@ -31,7 +31,7 @@
 </head>
 <body>
 
-  <div class="site-wrap">
+  <div class="site-wrap" id="gallery">
 
     <div class="site-mobile-menu">
       <div class="site-mobile-menu-header">
@@ -64,21 +64,18 @@
                     <li><a href="scenterinfrac.html">Shopping Center & Infrastructure</a></li>
                     <li><a href="team.html">Team</a></li>
                     <li><a href="special-event.html">Special Events</a></li>
-                    <li><a href="#">Architecture</a></li>
-                    <li><a href="#">Animals</a></li>
-                    <li><a href="#">Sports</a></li>
-                    <li><a href="#">Travel</a></li>
-                    <li class="has-children">
+                    <li><a href="artandcel.html">Artistry & Celebs</a></li>
+                    <li><a href="nuandcel.html">Nutrilite & Celebs</a></li>
+                    <!-- <li class="has-children">
                       <a href="#">Sub Menu</a>
                       <ul class="dropdown">
                         <li><a href="#">Menu One</a></li>
                         <li><a href="#">Menu Two</a></li>
                         <li><a href="#">Menu Three</a></li>
                       </ul>
-                    </li>
+                    </li> -->
                   </ul>
                 </li>
-                <li><a href="services.html">Services</a></li>
                 <li><a href="about.html">About</a></li>
                 <li class="active"><a href="contact.html">Contact</a></li>
               </ul>
@@ -130,66 +127,16 @@
         </div>
         
         <div class="row">
-          <div class="col-lg-8 mb-5">
-            <form action="#">
-
-
-              <div class="row form-group">
-                <div class="col-md-6 mb-3 mb-md-0">
-                  <label class="text-white" for="fname">First Name</label>
-                  <input type="text" id="fname" class="form-control">
-                </div>
-                <div class="col-md-6">
-                  <label class="text-white" for="lname">Last Name</label>
-                  <input type="text" id="lname" class="form-control">
-                </div>
-              </div>
-
-              <div class="row form-group">
-
-                <div class="col-md-12">
-                  <label class="text-white" for="email">Email</label> 
-                  <input type="email" id="email" class="form-control">
-                </div>
-              </div>
-
-              <div class="row form-group">
-
-                <div class="col-md-12">
-                  <label class="text-white" for="subject">Subject</label> 
-                  <input type="subject" id="subject" class="form-control">
-                </div>
-              </div>
-
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <label class="text-white" for="message">Message</label> 
-                  <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Write your notes or questions here..."></textarea>
-                </div>
-              </div>
-
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <input type="submit" value="Send Message" class="btn btn-primary py-2 px-4 text-white">
-                </div>
-              </div>
-
-
-            </form>
-          </div>
-          <div class="col-lg-3 ml-auto">
-            <div class="mb-3">
-              <p class="mb-0 font-weight-bold text-white">Address</p>
-              <p class="mb-4">203 Fake St. Mountain View, San Francisco, California, USA</p>
-
-              <p class="mb-0 font-weight-bold text-white">Phone</p>
-              <p class="mb-4"><a href="#">+1 232 3235 324</a></p>
-
-              <p class="mb-0 font-weight-bold text-white">Email Address</p>
-              <p class="mb-0"><a href="#">youremail@domain.com</a></p>
-
+          <div class="col-lg-12 mb-5">
+            <div class="col-md-12 col-lg-12 col-xl-12 text-center">
+                <img src="images/hihi.png" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
+                <h2 class="text-white font-weight-light mb-4">Trinh Quoc Hao</h2>
+                <p class="mb-4">Để liên hệ và hợp tác với Hào trong dự án kinh doanh này, hãy đừng ngần ngại gửi mail cho Hào theo địa chỉ để được biết thêm thông tin chi tiết: <span style="color: #20C997;">haoquoctrinh01@gmail.com</span> hoặc liên hệ với Hào thông qua <span style="color: #20C997;">Facebook</span> hoặc <span style="color: #20C997;">Instagram</span>. Xin cảm ơn bạn đã quan tâm và hợp tác.</p>
+                <p>
+                    <a href="https://www.facebook.com/nibtrinh/" class="pl-3 pr-3"><span class="icon-facebook"></span></a>
+                    <a href="https://www.instagram.com/nibtrinh/" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                </p>
             </div>
-
           </div>
         </div>
       </div>
@@ -234,6 +181,7 @@
   <script>
     $(document).ready(function(){
       $('#lightgallery').lightGallery();
+      $('#gallery').bind('contextmenu',function() { return false; });
     });
   </script>
 

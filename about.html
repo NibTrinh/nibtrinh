@@ -31,7 +31,7 @@
 </head>
 <body>
 
-  <div class="site-wrap">
+  <div class="site-wrap" id="gallery">
 
     <div class="site-mobile-menu">
       <div class="site-mobile-menu-header">
@@ -64,21 +64,18 @@
                     <li><a href="scenterinfrac.html">Shopping Center & Infrastructure</a></li>
                     <li><a href="team.html">Team</a></li>
                     <li><a href="special-event.html">Special Events</a></li>
-                    <li><a href="#">Architecture</a></li>
-                    <li><a href="#">Animals</a></li>
-                    <li><a href="#">Sports</a></li>
-                    <li><a href="#">Travel</a></li>
-                    <li class="has-children">
+                    <li><a href="artandcel.html">Artistry & Celebs</a></li>
+                    <li><a href="nuandcel.html">Nutrilite & Celebs</a></li>
+                    <!-- <li class="has-children">
                       <a href="#">Sub Menu</a>
                       <ul class="dropdown">
                         <li><a href="#">Menu One</a></li>
                         <li><a href="#">Menu Two</a></li>
                         <li><a href="#">Menu Three</a></li>
                       </ul>
-                    </li>
+                    </li> -->
                   </ul>
                 </li>
-                <li><a href="services.html">Services</a></li>
                 <li class="active"><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
               </ul>
@@ -122,7 +119,7 @@
           <div class="col-md-7">
             <div class="row mb-4">
               <div class="col-12 ">
-                <h2 class="site-section-heading text-center">About</h2>
+                <h2 class="site-section-heading text-center">About Me</h2>
               </div>
             </div>
           </div>
@@ -131,17 +128,19 @@
         
         <div class="row mb-5">
           <div class="col-md-7">
-            <img src="images/img_2.jpg" alt="Images" class="img-fluid">
+            <img src="images/275640813_925027728162947_8960969766857687986_n.jpg" alt="Images" class="img-fluid">
           </div>
-          <div class="col-md-4 ml-auto">
-            <h3 class="text-white">My Mission</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus vel tenetur explicabo necessitatibus, ad soluta consectetur illo qui voluptatem. Quis soluta maiores eum. Iste modi voluptatum in repudiandae fugiat suscipit dolorum harum, porro voluptate quis? Alias repudiandae dicta doloremque voluptates soluta repellendus, unde laborum quo nam, ullam facere voluptatem similique.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor architecto excepturi aliquid minus nostrum dicta labore iusto obcaecati fugit cupiditate.</p>
+          <div class="info-about col-md-4 ml-auto">
+            <h3 class="text-white">Trinh Quoc Hao</h3>
+            <p>Hào hiện đang là một sinh viên đang học tập tại trường ĐH Tôn Đức Thắng với chuyên ngành là Kĩ Thuật Phần Mềm thuộc khoa Công Nghệ Thông Tin. Bên cạnh đó, mình còn là một Media-er tổ chức các sự kiện, một designer và ông dev cùn.</p>
+            <p>Với sự nhiệt huyết của bản thân, Hào luôn thử thách bản thân ở nhiều lĩnh vực và ngành nghề khác nhau. Từ những kiến thức và kĩ năng có được, mình đã tận dụng vào việc start-up cho mình một công việc hợp tác kinh doanh với các brand. Và đó cũng là một trong những thứ bản thân Hào đã ấp ủ rất lâu và là một niềm vinh hạnh, may mắn khi được làm việc chung với một trong những brand và tập đoàn thuộc Top 30 của Hoa Kỳ.</p>
+            <p>Để phát triển được một dự án start-up tốt, hiện tại Hào đang tìm kiếm thêm những người bạn cùng đồng hành và thành lập thành một team để phát triển được dự án một cách tốt nhất và cũng như muốn giúp các bạn gặt hái thêm các giá trị: có thêm những trải nghiệm mới trong môi trường làm việc mới, được phát triển năng lực và xây dựng thương hiệu bản thân, trau dồi thêm kiến thức, kĩ năng và kinh nghiệm từ những anh chị mentor ở những lĩnh vực khác nhau trong môi trường làm việc. Ngoài ra, còn có các hoạt động và sự kiện vô cùng đặc biệt: các chương trình đào tạo về kinh doanh, triển lãm về sản phẩm, team building, make-up skin-care, những buổi off-line và các sự kiện khác trong năm...</p>
+            <p>Thay vì lựa chọn làm việc cho một công ty nào đó thì Hào lựa chọn việc làm chủ trong việc kinh doanh start-up của mình để đạt được những mục tiêu và giá trị lớn hơn.</p>
           </div>
         </div>
 
 
-        <div class="row site-section">
+        <!-- <div class="row site-section">
           <div class="col-md-6 col-lg-6 col-xl-4 text-center mb-5">
             <img src="images/person_1.jpg" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
             <h2 class="text-black font-weight-light mb-4">Jean Smith</h2>
@@ -172,7 +171,7 @@
               <a href="#" class="pl-3 pr-3"><span class="icon-facebook"></span></a>
             </p>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -215,6 +214,7 @@
   <script>
     $(document).ready(function(){
       $('#lightgallery').lightGallery();
+      $('#gallery').bind('contextmenu',function() { return false; });
     });
   </script>
 
