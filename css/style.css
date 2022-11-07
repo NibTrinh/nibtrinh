@@ -89,6 +89,12 @@ a {
   opacity: 0;
 }
 
+.photo-text-more span{
+  text-align: center;
+  width: 230px;
+  height: auto;
+}
+
 .photo-text-more:hover{
   opacity: 1;
   left: 0;
