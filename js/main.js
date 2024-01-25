@@ -89,7 +89,13 @@ jQuery(document).ready(function($) {
 	}; 
 	siteMenuClone();
 
-
+	// Skills
+    $('.skill').waypoint(function () {
+        $('.progress .progress-bar').each(function () {
+            $(this).css("width", $(this).attr("aria-valuenow") + '%');
+        });
+    }, {offset: '80%'});
+	
 	var sitePlusMinus = function() {
 		$('.js-btn-minus').on('click', function(e){
 			e.preventDefault();

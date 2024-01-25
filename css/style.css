@@ -128,9 +128,36 @@ a {
     right: 0;
     bottom: 0;
     top: 0;
-    background: rgba(0, 0, 0, 0.4);
+    /* background: rgba(0, 0, 0, 0.4); */
     z-index: 1;
 }
+
+/*** Skills ***/
+#skill .progress {
+  height: 5px;
+  border-radius: 5px;
+}
+
+#skill .progress .progress-bar {
+  width: 0px;
+  border-radius: 5px;
+  transition: 3s;
+}
+
+#skill .nav-pills .nav-link {
+  color: var(--dark);
+}
+
+#skill .nav-pills .nav-link.active {
+  color: #FFFFFF;
+}
+
+#skill .tab-content hr {
+  width: 30px;
+}
+
+
+
 
 .site-section-hero,
 .site-section-hero .row {
